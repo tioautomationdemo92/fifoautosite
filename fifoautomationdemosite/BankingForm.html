@@ -9,7 +9,7 @@
 
   <body>
   <div class="container">
-    <h1 class="main-header">Account Application Form.</h1>
+    <h1 class="main-header">FIFO Bank Account Creation Form.</h1>
     <hr>
     <form id="app-form" action="">
     <fieldset class="sub-container" id="basic-details">
@@ -40,6 +40,15 @@
           Last Name<span class="required">*</span>
           <input class="standard-input" name="lastname" id="lastname" type="text" placeholder="Last name..." required>
         </label>
+		<label for="gender" class="standard-label">
+          Gender<span class="required">*</span>
+          <input type="radio" id="male" name="gender" value="male" class="radio-input">
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="female" class="radio-input">
+			<label for="female">Female</label>
+			<input type="radio" id="other" name="gender" value="other" class="radio-input">
+			<label for="other">Other</label>
+        </label>            
         <label for="phone-number" class="standard-label">
           Phone Number<span class="required">*</span>
           <input class="standard-input" type="tel" id="phone" name="phone" pattern='^\+?\d{10,12}' placeholder="Example: 01925999111" required>
@@ -258,12 +267,12 @@
         <h2 class="sub-heading">Your Consent</h2>
         <hr>
 		<input type="checkbox" id="credit-click" name="credit-search"> 
-        <label class="standard-label" id="credit-search" for="credit-search">
+        <label id="credit-search" for="credit-search">
           I agree the terms and conditions.
           <br>        
-        </label>
+        </label><br>
         <label class="standard-label" for="info-request" id="info-request">
-          Tick the box below to allow the bank to contact you via email if further information is needed to progress your application.
+          Note - Bank will contact you via email if further information is needed to progress your application.
         </label>
         
 		<button onclick="myFunction_accnum()">Submit Application</button>
