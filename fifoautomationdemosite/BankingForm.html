@@ -212,53 +212,53 @@
           <h3 class="small-heading">Current Address</h3>
           <label for="line1" class="standard-label">
             Address line 1<span class="required">*</span>
-            <input class="standard-input" type="text" required>
+            <input class="standard-input" name="AddressLine1" type="text" required>
           </label>
           <label for="line2" class="standard-label">
             Address line 2
-            <input class="standard-input" type="text">
+            <input class="standard-input" name="AddressLine2" type="text">
           </label>
           <label for="town-city" class="standard-label">
             Town/City<span class="required">*</span>
-            <input class="standard-input" type="text" required>
+            <input class="standard-input" name="TownCity" type="text" required>
           </label>
           <label for="county" class="standard-label">
             County
-            <input class="standard-input" type="text">
+            <input class="standard-input" name="Country" type="text">
           </label>
           <label for="postcode" class="standard-label">
             Post Code<span class="required">*</span>
-            <input class="standard-input" type="text" maxlength="8" required>
+            <input class="standard-input" name="PostCode" type="text" maxlength="8" required>
           </label>
           <h3 class="small-heading">Have you lived at any other address within the last 5 years?</h3>
           <label for="yes-prev" class="radio-label">
-            <input class="radio-input" name="UK-res" value="yes" id="yes-prev" type="radio">Yes</input>
+            <input class="radio-input" name="UK-res" value="yes" id="yes-Current" type="radio">Yes</input>
           </label>
           <label for="no-prev" class="radio-label">
-            <input class="radio-input" name="UK-res" value="no" id="no-prev" type="radio">No</input>
+            <input class="radio-input" name="UK-res" value="no" id="no-Current" type="radio">No</input>
           </label>
         </div>
         <div id="previous-address">
           <h3 class="small-heading">Previous Address</h3>
           <label for="line1" class="standard-label">
             Address line 1<span class="required">*</span>
-            <input class="standard-input" type="text">
+            <input class="standard-input" name="PrevAddressline1" type="text">
           </label>
           <label for="line2" class="standard-label">
             Address line 2
-            <input class="standard-input" type="text">
+            <input class="standard-input" name="PrevAddressline2" type="text">
           </label>
           <label for="town-city" class="standard-label">
             Town/City<span class="required">*</span>
-            <input class="standard-input" type="text">
+            <input class="standard-input" name="PrevTownCity" type="text">
           </label>
           <label for="county" class="standard-label">
-            County
-            <input class="standard-input" type="text">
+            Country
+            <input class="standard-input" name="PrevCountry" type="text">
           </label>
           <label for="postcode" class="standard-label">
             Post Code<span class="required">*</span>
-            <input class="standard-input" type="text" maxlength="8">
+            <input class="standard-input" name="PrevPostCode" type="text" maxlength="8">
           </label>
         </div>
       </fieldset>
@@ -266,16 +266,15 @@
       <fieldset class="sub-container" id="your-consent">
         <h2 class="sub-heading">Your Consent</h2>
         <hr>
-		<input type="checkbox" id="credit-click" name="credit-search"> 
-        <label id="credit-search" for="credit-search">
+		<input type="checkbox" id="credit-click" name="TermsAndCond"> 
+        <label id="credit-search" name="TermsAndCond" for="credit-search">
           I agree the terms and conditions.
           <br>        
         </label><br>
         <label class="standard-label" for="info-request" id="info-request">
           Note - Bank will contact you via email if further information is needed to progress your application.
-        </label>
-        
-		<button onclick="myFunction_accnum()">Submit Application</button>
+        </label>        
+		<button onclick="myFunction_accnum()" name="SubmitApplication">Submit Application</button>
 		<h3>
 		<p id="demo"></p>
 		</h3>
